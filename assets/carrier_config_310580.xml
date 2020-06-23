@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="enableMultipartSMS" value="true" />
+        <int name="maxImageHeight" value="2432" />
+        <int name="maxImageWidth" value="4320" />
+        <int name="maxMessageSize" value="1048576" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_ims_gba_required_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="moto_lppe_available_bool" value="true" />
+        <int name="cdma_3waycall_flash_delay_int" value="200" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+    </carrier_config>
+    <carrier_config spn="Inland Cellular">
+        <int name="maxSubjectLength" value="80" />
+        <int name="smsToMmsTextThreshold" value="1" />
+        <string name="httpParams">X-MDN: ##LINE1##</string>
+        <boolean name="mmsRoamingAutoRetrieveByDefault" value="true"/>
+    </carrier_config>
+    <carrier_config carrierid="tmo">
+        <boolean name="support_video_conference_call_bool" value="true" />
+    </carrier_config>
+    <carrier_config carrierid="metropcs">
+        <boolean name="support_video_conference_call_bool" value="true" />
+    </carrier_config>
+</carrier_config_list>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config_list>
+    <carrier_config>
+        <string name="emailGatewayNumber">6245</string>
+        <boolean name="enableSMSDeliveryReports" value="false" />
+        <string name="httpParams">X-MDN: ##LINE1##|Proxy-Authorization: Basic ##NAI##</string>
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxMessageSize" value="1048576" />
+        <int name="maxSubjectLength" value="80" />
+        <string name="naiSuffix">:pcs</string>
+        <int name="recipientLimit" value="40" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="supportMmsContentDisposition" value="false" />
+        <string-array name="moto_mt_sms_filter_list" num="2">
+            <item value="byprefixsuffix;//ANDROID;com.coremobility.app.vnotes;com.coremobility.integration.message.CM_SMSReceiver;//CM" />
+            <item value="byprefix;//LL;com.locationlabs.sparkle.yellow.pre;com.locationlabs.v3client.util.SMSNotificationListener" />
+        </string-array>
+        <int name="volte_replacement_rat_int" value="6" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_default_enhanced_4g_mode_enabled_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+    </carrier_config>
+</carrier_config_list>

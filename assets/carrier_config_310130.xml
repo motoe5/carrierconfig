@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config_list>
+    <carrier_config>
+        <int name="smsToMmsTextThreshold" value="1" />
+        <int name="maxMessageTextSize" value="-1" />
+        <int name="recipientLimit" value="20" />
+        <int name="maxImageHeight" value="2432" />
+        <int name="maxSubjectLength" value="80" />
+        <string name="httpParams">X-MDN: ##LINE1##</string>
+        <int name="maxMessageSize" value="1048576" />
+        <int name="maxImageWidth" value="4320" />
+        <boolean name="enabledMMS" value="true" />
+        <boolean name="enableMultipartSMS" value="true" />
+        <boolean name="use_otasp_for_provisioning_bool" value="true" />
+        <boolean name="mmsRoamingAutoRetrieveByDefault" value="true"/>
+        <int name="volte_replacement_rat_int" value="6" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_default_enhanced_4g_mode_enabled_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <int name="cdma_3waycall_flash_delay_int" value="200" />
+    </carrier_config>
+    <carrier_config gid1="BA00060000000000"> <!-- Carolina West -->
+        <boolean name="force_imei_bool" value="true" />
+    </carrier_config>
+    <carrier_config spn="Sprint">
+        <string-array name="moto_mt_sms_filter_list" num="2">
+            <item value="byprefixsuffix;//ANDROID;com.coremobility.app.vnotes;com.coremobility.integration.message.CM_SMSReceiver;//CM" />
+            <item value="byprefix;//LL;com.locationlabs.sparkle.yellow.pre;com.locationlabs.v3client.util.SMSNotificationListener" />
+        </string-array>
+    </carrier_config>
+</carrier_config_list>
